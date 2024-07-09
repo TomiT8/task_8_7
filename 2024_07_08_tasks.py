@@ -60,7 +60,7 @@ def read_movies_csv(file_name):
 def filter_movies(movies: List[Movie], genre: str):
     filtered_movies = []
     for movie in movies:
-        if movie.Genre.lower() == genre.lower():
+        if movie.Genre == genre:
             filtered_movies.append(movie)
     return filtered_movies
 
