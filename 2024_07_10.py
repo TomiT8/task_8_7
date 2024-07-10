@@ -16,20 +16,22 @@
 
 # todo Task 1
 # Napis generator `even_numbers()`, ktory bude generovat donekonecna parne (sude) cisla
-# def even_numbers():
-#     x = 0
-#     while True:
-#         yield x
-#         x += 2
-#
-# generator = even_numbers()
-#
-# for i in range(10):
-#     print(next(generator))
+
+"""
+def even_numbers():
+    x = 0
+    while True:
+        yield x
+        x += 2
+
+generator = even_numbers()
+
+for i in range(10):
+    print(next(generator))
+"""
 
 # todo Task 2
 # Napis generator `my_range(start, stop=None, step=1), ktory sa sprava rovnako ako funkcia range
-
 
 # todo Task 3
 # Napis generator `fib()`, ktory bude donekonecna generovat cisla fibonnaciho postupnosti
@@ -45,6 +47,7 @@
 # todo Task 6
 # Napis generatory `map` a `filter`, ktore sa spravaju ako builtin funkcie `map` a `filter`
 
+"""
 def my_map(f, iterable):
     for item in iterable:
         yield f(item)
@@ -69,3 +72,4 @@ def is_odd(x):
 numbers = [1, 2, 3, 4, 5]
 odd_numbers = filter(is_odd, numbers)
 print(list(odd_numbers))
+"""
