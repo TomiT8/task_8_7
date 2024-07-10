@@ -58,9 +58,9 @@ def to_lower(x):
 strings = ['Mama', 'OTEC', 'seSTra', 'braT']
 lower_string = map(to_lower, strings)
 print(list(lower_string))
+"""
 
-
-
+"""
 def my_filter(f, iterable):
     for item in iterable:
         if f(item):
