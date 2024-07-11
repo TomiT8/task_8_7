@@ -22,9 +22,9 @@ print(matches)
 # Disclaimer - toto nie je definicia realnej validnej emailovej adresy, iba velmi podobna definicia.
 # Najlepsie je pouzivat v praxi validatory z uz naimplementovanych kniznic.
 
+"""
 import re
 
-"""
 test = [
     "tomas.jasko@gmail.com",
     "tomasjasko8@gmail.co",
@@ -47,10 +47,12 @@ for email in test:
 # Task 2.1
 # Napis funkciu, ktora dostane text a vrati z neho zoznam vsetkych emailovych adries
 
+"""
 import re
 text = "Find email: some valid ones tomas.jasko@gmail.com, adam.jasko@gmail.com and some invalid ones @gmail.com, tomasjasko@gmail.c_com."
 
-pattern = r"^[a-zA-Z0-9\.]+@[a-zA-Z0-9]+\.+[a-z]{2,}$"
+pattern = r"[a-zA-Z0-9\.]+@[a-zA-Z0-9]+\.+[a-z]{2,}"
 
 matches = re.findall(pattern, text)
 print(matches)
+"""
