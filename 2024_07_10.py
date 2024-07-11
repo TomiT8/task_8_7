@@ -73,3 +73,5 @@ numbers = [1, 2, 3, 4, 5]
 odd_numbers = filter(is_odd, numbers)
 print(list(odd_numbers))
 """
+
+# todo - Regulárne výrazy
