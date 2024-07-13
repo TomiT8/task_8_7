@@ -189,6 +189,7 @@ def web_search(textlist):
 print(web_search(test))
 """
 
+
 # Task 5
 # Napis funkciu, ktora dostane na vstupe string a zisti, ci sa jedna o IPv4 adresu.
 # IPv4 adresa je vo formate {cislo v rozmedzi 0-255}.{cislo v rozmedzi 0-255}.{cislo v rozmedzi 0-255}.{cislo v rozmedzi 0-255}
