@@ -189,6 +189,30 @@ def web_search(textlist):
 print(web_search(test))
 """
 
+# todo - rozšírené riešenie
+
+
+import re
+
+test = [
+    "https://{hocico}<whitespace>",  # True
+    "http://{hocico}<whitespace>",  # True
+    "httpe://{hocico}<whitespace>",
+    "http:/{hocico}<whitespace>",
+    "http//{hocico}<whitespace>"
+]
+
+def web_search(textlist):
+    pattern = r'https?:\/\/.*'
+    matches = []
+    for text in textlist:
+        found = re.findall(pattern, text)
+        matches.extend(found)
+    return matches
+
+print(web_search(test))
+
+
 
 # Task 5
 # Napis funkciu, ktora dostane na vstupe string a zisti, ci sa jedna o IPv4 adresu.
