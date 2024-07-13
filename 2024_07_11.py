@@ -179,7 +179,7 @@ test = [
 ]
 
 def web_search(textlist):
-    pattern = r'https?:\/\/.*'
+    pattern = r'https?:\/\/\S+\s'
     matches = []
     for text in textlist:
         found = re.findall(pattern, text)
