@@ -1,6 +1,7 @@
 # todo
 #   1. Extrahovanie Emailových Adries
 #   Úloha: Nájsť všetky emailové adresy v texte.
+
 """
 import re
 
@@ -17,6 +18,7 @@ print(extract_email(text))
 # todo
 #   2. Overenie Formátu Telefónneho Čísla
 #   Úloha: Skontrolovať, či daný reťazec zodpovedá formátu telefónneho čísla (napr. +421 123 456 789).
+
 """
 import re
 
@@ -49,11 +51,32 @@ print(extract_url(text))
 #   4. Vyhľadávanie a Nahradenie Všetkých Čísel v Texte
 #   Úloha: Nahradiť všetky čísla v texte s textom "NUMBER".
 
+"""
+text = "V tomto texte sú čísla ako 123, 456 a 789."
 
-# text = "V tomto texte sú čísla ako 123, 456 a 789."
+def number_replace(text):
+    return re.sub(r'\d+', "NUMBER", text)
+
+print(number_replace(text))
+"""
 
 # todo
 #   5. Overenie Platnosti Dátumu v Formáte RRRR-MM-DD
 #   Úloha: Skontrolovať, či daný reťazec zodpovedá formátu dátumu (napr. 2024-07-13).
 
-# date = "valid is 2024-07-13, invalid is 2024-13-40"
+"""
+from datetime import datetime
+
+text = "2024-07-13"
+text = "2024-13-40"
+
+def email_control(text):
+    try:
+        datetime.strptime(text,"%Y-%m-%d")
+        month, day, year = text.split('-')
+        return True
+    except ValueError:
+        return False
+
+print(email_control(text))
+"""
