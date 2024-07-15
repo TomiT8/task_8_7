@@ -31,7 +31,6 @@ if __name__ == "__main__":
 #   threading.current_thread().name
 
 import threading
-import time
 
 def thread_function():
     print(f"Aktuálny názov threadu: Thread - {threading.current_thread().name}.")
