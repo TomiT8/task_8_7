@@ -212,3 +212,20 @@ def is_valid_ipv4(ipv4):
 for ip in test:
     print(f"{ip} - {is_valid_ipv4(ip)}")
 """
+
+# todo Task 6
+#   Napis funkciu, ktora dostane ako parameter string obsahujuci hashtagy z tweetu a vrati ich zoznam.
+#   Priklad:
+#   "Love the new features in #Python3! #coding #developer #regex"
+
+"""
+import re
+
+text = "Love the new features in #Python3! #coding #developer #regex"
+
+def is_hash(text):
+    pattern = r'\#\S+'
+    return [match.replace("#", "") for match in re.findall(pattern, text)]
+
+print(is_hash(text))
+"""
