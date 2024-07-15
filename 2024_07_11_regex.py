@@ -230,8 +230,8 @@ import re
 text = "Love the new features in #Python3! #coding #developer #regex"
 
 def is_hash(text):
-    pattern = r'\#\S+'
-    return [match.replace("#", "") for match in re.findall(pattern, text)]
+    pattern = r'\#[^\s#]+'
+    return re.findall(pattern, text)
 
 print(is_hash(text))
 """
