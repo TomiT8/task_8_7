@@ -1,6 +1,7 @@
 # todo regex
 
-# todo Task 1
+# todo
+#   Task 1
 #   Napis funkciu, ktora dostane na vstupe text a vrati v zozname vsetky telefonne cisla
 #   s ceskou predvolbou +420, ktore sa v texte nachadzaju. Predpokladaj, ze za predvolbou
 #   moze nasledovat iba prave 9 cislic
@@ -15,7 +16,8 @@ matches = re.findall(pattern, text)
 print(matches)
 """
 
-# todo Task 2
+# todo
+#   Task 2
 #   Napis funkciu, ktora dostane na vstupe string a rozhodne, ci je to validna emailova adresa
 #   definujme si znaky basic = {vsetky pismena anglickej abecedy} | {vsetky cislice} | {.}
 #   emailova adresa je validna, pokial obsahuje aspon jeden znak z mnoziny `basic`, za ktorym nasleduje zavinac '@',
@@ -45,7 +47,8 @@ for email in test:
     print(f"{email} - {is_valid}")
 """
 
-# todo Task 2.1
+# todo
+#   Task 2.1
 #   Napis funkciu, ktora dostane text a vrati z neho zoznam vsetkych emailovych adries
 
 """
@@ -58,7 +61,8 @@ matches = re.findall(pattern, text)
 print(matches)
 """
 
-# todo Task 3
+# todo
+#   Task 3
 #   Napis funkciu, ktora dostane datum v stringu a skontroluje, ci je vo formate mm-dd-yyyy. Ak nie, vratime None.
 #   Ak ano, prevedieme ho na format dd/mm/yyyy a vratime ho ako vysledok.
 
@@ -160,7 +164,8 @@ for valid_date in valid_dates:
     print(valid_date)
 """
 
-# todo Task 4
+# todo
+#   Task 4
 #   Napis funkciu, ktora vrati vsetky webove adresy zo stringu vo formate
 #   https://{hocico}<whitespace>
 #   alebo
@@ -213,7 +218,8 @@ for ip in test:
     print(f"{ip} - {is_valid_ipv4(ip)}")
 """
 
-# todo Task 6
+# todo
+#   Task 6
 #   Napis funkciu, ktora dostane ako parameter string obsahujuci hashtagy z tweetu a vrati ich zoznam.
 #   Priklad:
 #   "Love the new features in #Python3! #coding #developer #regex"
